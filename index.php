@@ -103,8 +103,8 @@
 							else if($password1 == $password2)
 							{
 								mysqli_select_db($link,"test");
-								$results=mysqli_query($link,"insert into usertable(Username,Password) values('$usernameSub','$password1')") or die("failed to connect".mysqli_connect_error());
-								header('localhost: http://localhost/college/index.php');
+								$results=mysqli_query($link,"insert into usertable(Id,Username,Password) values(8,'$usernameSub','$password1');") or die("failed to connect".mysqli_connect_error());
+								header('localhost: http://localhost/college/');
 								echo "Data Stored" ;
 							}
 							mysqli_close($link);
