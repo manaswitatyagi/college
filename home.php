@@ -22,6 +22,9 @@
 					<a class="nav-link" href="practice.php">About Us</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="colleges.php">Colleges</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="login.php">Not <?php
 					if(isset($_SESSION['username']))
 						{
