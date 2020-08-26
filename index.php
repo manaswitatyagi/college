@@ -65,7 +65,7 @@
 					<input class="input" type="text" name="Username" placeholder="Username" required><br>
 					<input class="input" type="password" name="Password" placeholder="Password" required><br>
 					<input class="button" type="submit" name="login" value="LOGIN"><br>
-					<a id="oksignup">Sign Up here</a> | <a href="#">Forgot Password?</a>
+					<a class="button" id="oksignup" href="#">Sign Up here</a> | <a class="button" href="#">Forgot Password?</a>
 				</form>
 			</div>
 		</div>
@@ -116,7 +116,7 @@
 					<input class="input" type="password" name="Password" placeholder="Password" required><br>
 					<input class="input" type="password" name="ConfirmPassword" placeholder="Confirm Password" required><br>
 					<input class="button" type="submit" name="signup" value="SIGN UP"><br>
-					<a id="oklogin">Login Here</a>
+					<a id="oklogin" class="button" href="#">Login Here</a>
 				</form>
 				</div>
 			</div>
