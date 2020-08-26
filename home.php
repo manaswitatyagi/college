@@ -11,21 +11,15 @@
 	</head>
 	<body>
 		<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
-			<a class="navbar-brand" href="home.php">
-				<img src="jagran_logo1.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> College Sikhsha
-			</a>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
 					<a class="nav-link" href="home.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="practice.php">About Us</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="colleges.php">Colleges</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="login.php">Not <?php
+					<a class="nav-link" href="index.php">Not <?php
 					if(isset($_SESSION['username']))
 						{
 							echo $_SESSION['username'];
