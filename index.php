@@ -54,7 +54,7 @@
 									$_SESSION['mes'] = "true";
 								} 
 								else {
-								echo "Login failed";
+									echo "Login failed";
 								}
 								mysqli_close($link);
 							}
