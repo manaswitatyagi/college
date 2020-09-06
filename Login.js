@@ -8,3 +8,10 @@ $(document).ready(function(){
 		$('#login').removeClass("reg");
 	});
 });
+
+function forgpw()
+{
+	event.preventDefault();
+	$( "#login" ).hide();
+	$( "#forgotpw" ).show();
+}
