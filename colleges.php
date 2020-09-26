@@ -9,21 +9,31 @@
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>College Sikhsha</title>
 		<style>
-aside {
-  width: 30%;
-  padding-left: 130px;
-  margin-left: 130px;
-  float: right;
-  font-style: italic;
-  background-color: green;
-}
 </style>
 	</head>
 	<body>
 		<aside>
-<p>The College Predictor is a very simple tool to choose the best engineering college on the basis of aggregate and percentile score.</p>
-<p>The biggest dilemma a student faces after qualifying an engineering entrance exam like JEE Main, JEE Advanced and any other state-level exam is which college they should target after qualifying the entrance exam. Although it is expected that a student who chooses to appear in a national-level entrance exam, for example JEE, should be well-aware of all those colleges or institutions which accepts JEE scores while offering admission. Yet, it is important that the student takes into consideration all the factors before zeroing in onto the college which suits his needs. This is where Shiksha College Predictor comes to the fore.</p> 
+<p><h3>Advertisment</h3></p>
+<p> Click on the <a href="https://www.geeksforgeeks.org/">link </a> to check various resoruces related to Computer Science Stream and Courses</p>
+
+<p><h3>NIRF Rankings</h3></p>
+<p> Click on the <a href="https://www.nirfindia.org/engg">link </a> to check the ranking for the desired college</p>
+
+
+<p><h3>Link To Colleges</h3></p>
+
+<li><a href="https://www.srmist.edu.in/">SRM IST</a></li>
+<li><a href="https://vit.ac.in/">VIT</a></li>
+
+
+
+
 </aside>
+
+
+
+
+
 		<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">

@@ -1,6 +1,6 @@
 body
 {
-	background-image: url("https://www.tokkoro.com/picsup/3029533-coffee_color_cup-of-coffee_drink_fabric_notebook_notepad_office_paper_pattern_pen_placemat_table_textile_texture_work_workplace.jpg");
+	background-image: url("https://themindsjournal.com/wp-content/uploads/sites/2/2018/02/4338031df0e65e3140847d4de88d3fac.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@ body
 }
 .input
 {
-	border:2px solid #19bf7d;
+	border:2px solid black;
 	outline:none;
 	background:none;
 	border-radius: 50px;
@@ -36,7 +36,7 @@ body
 {
 	border:none;
 	outline:none;
-	background: #19bf7d;
+	background: black;
 	font-size: 20px;
 	font-aline:center;
 	color:white;
@@ -67,7 +67,7 @@ body
 
 a:link,a:visited
 {
-	color: black;
+	color: white;
 	text-decoration:none;
 }
 

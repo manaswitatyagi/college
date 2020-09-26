@@ -15,10 +15,26 @@ body
 	font-family: Quicksand;
 }
 
-#center
-{
-	text-align: center;
+
+aside {
+	position: absolute;
+    top: 80px;
+    right: 0px;
+    background: rgba(255,255,255,0.8);
+    width: 20em;
+    height: 25em;
+
+    overflow: scroll;
+		text-align: center;
+		font-family: Quicksand;
 }
+
+
+
+
+
+
+
 
 .ip
 {
