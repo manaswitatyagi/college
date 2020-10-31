@@ -21,9 +21,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="index.php">Not <?php
 					if(isset($_SESSION['username']))
-						{
-							echo $_SESSION['username'];
-						}
+					{
+						echo $_SESSION['username'];
+					}
 					?>? Logout</a>
 				</li>
 			</ul>

@@ -1,3 +1,5 @@
+Created DB tables
+
 CREATE TABLE `usertable` (
   `Id` int(10) NOT NULL,
   `Username` varchar(100) NOT NULL,

@@ -1,0 +1,10 @@
+Added AJAX
+$.ajax({
+	type: "POST",
+	url: "/localhost/college",
+	success: function(response)
+	{
+		data = response.data;
+		write(data);
+	}
+});

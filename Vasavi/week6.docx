@@ -1,0 +1,45 @@
+Demonstrated simple application using Java Servlet
+
+HTML:
+
+<html>
+	<body>
+
+		<form action="welcome" method="get">
+			Enter your name: <input type="text" name="name"><br>
+			<input type="submit" value="login">
+		</form>
+	</body>
+</html>
+
+JAVA:
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+public class DemoServ extends HttpServlet
+{
+	public void doGet(HttpServletRequest req, HttpServletResponse res)throws ServletException,IOException
+	{
+		res.setContentType("text/html");
+		PrintWriter pw=res.getWriter();
+		String name=req.getParameter("name");
+		pw.println("Welcome "+name+"this is an example of Servlet");
+	}
+}
+
+XML:
+
+<web-app>
+
+<servlet>
+<servlet-name>sonoojaiswal</servlet-name>
+<servlet-class>DemoServ</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>sonoojaiswal</servlet-name>
+<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+
+</web-app>
