@@ -1,0 +1,73 @@
+JSP - index.jsp
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<%@page import="javax.servlet.*"%>
+<%@page import="javax.servlet.http.*"%>
+
+<html>
+	<head>
+		<title> Simple Web Application </title>
+	</head>
+	<body bgcolor="pink">
+		<form action = "NewServlet" method="post">
+			FirstName: <input type="text" name="fname" /> <br>
+			LastName: <input type="text" name="lname" /> <br>
+				<input type="submit" value="ClickMe" />
+		<%
+			if(request.getAttribute("Error")!= null){
+		%>
+			<h3> <%= request.getAttribute("Error") %> </h3>
+		<%
+			}
+		%>
+		</form>
+	
+	</body>
+</html>
+
+Java Code -
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import javax.servlet.RequestDispatcher;
+
+public class NewServlet extends HttpServlet{
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)throws IOException, ServletException{
+		PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		String fname = request.getParameter("fname");
+		String lname = request.getParameter("lname");
+		if(fname.equals("Vasavi") && lname.equals("Agarwal")){
+			out.print("<html>");
+			out.print("<body bgcolor=pink>");
+			out.print("<h1> Thanks for identifying yourself !!!</h1>");
+			out.print("</body>");
+			out.print("</html>");
+		}
+		else{
+			request.setAttribute("Error","Incorrect credentials ");
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+			rd.forward(request,response);
+		}
+	}
+}
+
+XML - web.xml
+
+<web-app>
+
+<servlet>
+<servlet-name>NewServlet</servlet-name>
+<servlet-class>NewServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>NewServlet</servlet-name>
+<url-pattern>/NewServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>

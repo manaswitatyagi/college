@@ -1,13 +1,37 @@
-Created DB tables
+Added email validation using JS
 
-CREATE TABLE `usertable` (
-  `Id` int(10) NOT NULL,
-  `Username` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL
-)
+function validate()
+{
+	var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+	if(($('#email').val()).match(mailformat))
+	{
+		document.form1.text1.focus();
+		return true;
+	}
+	else
+	{
+		alert("You have entered an invalid email address!");
+		document.form1.text1.focus();
+		return false;
+	}
+}
 
+Added some more JS
 
-INSERT INTO `usertable` (`Id`, `Username`, `Password`) VALUES
-(1, 'vasavi', 'test'),
-(3, 'manaswita', 'test'),
-(17, 'swetha', 'test');
+$(document).ready(function(){
+	$('#oksignup').click(function(){
+		$('#login').addClass("reg");
+		$('#signup').removeClass("reg");
+	});
+	$('#oklogin').click(function(){
+		$('#signup').addClass("reg");
+		$('#login').removeClass("reg");
+	});
+});
+
+function forgpw()
+{
+	event.preventDefault();
+	$( "#login" ).hide();
+	$( "#forgotpw" ).show();
+}
